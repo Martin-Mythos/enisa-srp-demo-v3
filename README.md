@@ -49,6 +49,11 @@ Open:
 http://127.0.0.1:8131/index.html
 ```
 
+## Published Links
+
+- GitHub: https://github.com/Martin-Mythos/enisa-srp-demo-v3
+- Vercel: https://enisa-srp-demo-v3.vercel.app/
+
 ## QA Summary
 
 Playwright QA ran all 9 pages at `1440`, `1280`, `1024`, `968`, `768`, and `390` in both EN and CN. Final result: zero page-level horizontal overflow, zero missing images, zero footer occlusion. The historical regressions at `968 readiness-dashboard`, `390 p00-decision-gate`, and `390 case-sharetable` are fixed in both languages.
