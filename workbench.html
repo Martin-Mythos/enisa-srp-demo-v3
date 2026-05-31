@@ -1,0 +1,64 @@
+    <!doctype html>
+    <html lang="en" data-lang="en">
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Operations Workbench · ENISA SRP Readiness</title>
+      <link rel="stylesheet" href="css/tokens.css">
+      <link rel="stylesheet" href="css/layout.css">
+      <link rel="stylesheet" href="css/components.css">
+      <link rel="stylesheet" href="css/screens.css">
+    </head>
+    <body data-page="p01">
+      <aside class="rail">
+        <a class="brand" href="index.html"><span>SRP</span><strong>ENISA SRP Readiness</strong><em>EVIDENCE CONSOLE</em></a>
+        <nav aria-label="Journey"><a class="rail-link" href="index.html"><span>00</span><b>Launcher</b><em>INDEX</em></a>
+<a class="rail-link" href="p00-decision-gate.html"><span>P00</span><b>Decision Gate</b><em>GATE</em></a>
+<a class="rail-link" href="workbench.html"><span>P01</span><b>Ops Overview</b><em>OPTIONAL</em></a>
+<a class="rail-link" href="case-sharetable.html"><span>P02</span><b>Case & Data</b><em>CASE</em></a>
+<a class="rail-link" href="submission-snapshot.html"><span>P03</span><b>Snapshot</b><em>TRACE</em></a>
+<a class="rail-link" href="evidence-receipt.html"><span>P04</span><b>Evidence Receipt</b><em>RECEIPT</em></a>
+<a class="rail-link" href="readiness-dashboard.html"><span>P05</span><b>Dashboard</b><em>READY</em></a>
+<a class="rail-link" href="demo-observer.html"><span>P06</span><b>Observer View</b><em>SAFE</em></a>
+<a class="rail-link" href="design-system.html"><span>DS</span><b>Design System</b><em>SYSTEM</em></a></nav>
+        <section class="rail-card">
+          <strong>Scenario 0a</strong>
+          <p><span class="en">Evidence-led reportability journey with honest receipt semantics.</span><span class="cn">证据驱动的报送触发旅程，并保留诚实回执语义。</span></p>
+        </section>
+      </aside>
+      <main class="app">
+        <header class="topbar">
+          <div>
+            <p class="crumb">P01 / Operations Workbench</p>
+            <h1><span class="en">Operations Workbench</span><span class="cn">运行工作台</span></h1>
+          </div>
+          <div class="top-actions">
+            <button class="btn ghost" type="button" data-reset-demo>Reset demo</button>
+            <div class="segmented" aria-label="Language">
+              <button type="button" data-lang-target="en">EN</button>
+              <button type="button" data-lang-target="cn">中文</button>
+            </div>
+          </div>
+        </header>
+        <p class="page-note">Optional operations overview: mixed objects can be triaged without bypassing the mandatory gate.</p>
+<section class="grid two">
+  <div class="panel"><div class="panel-label">Mixed queue</div><div class="list">
+    <button class="list-row btn ghost" data-row-id="SIG-001" data-kind="signal" data-detail="High-risk vulnerability signal, L2 evidence present."><span>SIG-001</span><span>Signal</span></button>
+    <button class="list-row btn ghost" data-row-id="DEC-001" data-kind="decision" data-detail="ReportabilityDecision awaiting or carrying endorsement."><span>DEC-001</span><span>Decision</span></button>
+    <button class="list-row btn ghost" data-row-id="CASE-014" data-kind="case" data-detail="ShareTable v2 package candidate with known gaps."><span>CASE-014</span><span>Case</span></button>
+    <button class="list-row btn ghost" data-row-id="GAP-007" data-kind="gap" data-detail="UTC receipt timestamp limitation, retained honestly."><span>GAP-007</span><span>Gap</span></button>
+  </div></div>
+  <div class="panel" data-workbench-detail><div class="panel-label">Selected object</div><h2>Choose a queue row</h2><p>Details preserve Signal / Decision / Case / Gap boundaries.</p></div>
+</section>
+
+      </main>
+      <footer class="journey-footer">
+        <a class="btn ghost" href="p00-decision-gate.html">← Previous</a>
+        <p data-footer-message><span class="en">Guard chain: P00 endorsement → P02 package → P03 snapshot → P04 receipt → P05/P06.</span><span class="cn">守卫链：P00 背书 → P02 报送包 → P03 快照 → P04 回执 → P05/P06。</span></p>
+        <a class="btn primary" href="case-sharetable.html" data-requires="endorsement">Continue →</a>
+      </footer>
+      <div class="toast" data-toast role="status" aria-live="polite"></div>
+      <script src="js/app-state.js"></script>
+      <script src="js/interactions.js"></script>
+    </body>
+    </html>

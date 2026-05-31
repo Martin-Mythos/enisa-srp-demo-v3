@@ -1,0 +1,59 @@
+    <!doctype html>
+    <html lang="en" data-lang="en">
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Submission Snapshot · ENISA SRP Readiness</title>
+      <link rel="stylesheet" href="css/tokens.css">
+      <link rel="stylesheet" href="css/layout.css">
+      <link rel="stylesheet" href="css/components.css">
+      <link rel="stylesheet" href="css/screens.css">
+    </head>
+    <body data-page="p03">
+      <aside class="rail">
+        <a class="brand" href="index.html"><span>SRP</span><strong>ENISA SRP Readiness</strong><em>EVIDENCE CONSOLE</em></a>
+        <nav aria-label="Journey"><a class="rail-link" href="index.html"><span>00</span><b>Launcher</b><em>INDEX</em></a>
+<a class="rail-link" href="p00-decision-gate.html"><span>P00</span><b>Decision Gate</b><em>GATE</em></a>
+<a class="rail-link" href="workbench.html"><span>P01</span><b>Ops Overview</b><em>OPTIONAL</em></a>
+<a class="rail-link" href="case-sharetable.html"><span>P02</span><b>Case & Data</b><em>CASE</em></a>
+<a class="rail-link" href="submission-snapshot.html"><span>P03</span><b>Snapshot</b><em>TRACE</em></a>
+<a class="rail-link" href="evidence-receipt.html"><span>P04</span><b>Evidence Receipt</b><em>RECEIPT</em></a>
+<a class="rail-link" href="readiness-dashboard.html"><span>P05</span><b>Dashboard</b><em>READY</em></a>
+<a class="rail-link" href="demo-observer.html"><span>P06</span><b>Observer View</b><em>SAFE</em></a>
+<a class="rail-link" href="design-system.html"><span>DS</span><b>Design System</b><em>SYSTEM</em></a></nav>
+        <section class="rail-card">
+          <strong>Scenario 0a</strong>
+          <p><span class="en">Evidence-led reportability journey with honest receipt semantics.</span><span class="cn">证据驱动的报送触发旅程，并保留诚实回执语义。</span></p>
+        </section>
+      </aside>
+      <main class="app">
+        <header class="topbar">
+          <div>
+            <p class="crumb">P03 / submitted_payload_snapshot</p>
+            <h1><span class="en">Submission Snapshot</span><span class="cn">提交快照</span></h1>
+          </div>
+          <div class="top-actions">
+            <button class="btn ghost" type="button" data-reset-demo>Reset demo</button>
+            <div class="segmented" aria-label="Language">
+              <button type="button" data-lang-target="en">EN</button>
+              <button type="button" data-lang-target="cn">中文</button>
+            </div>
+          </div>
+        </header>
+        <p class="page-note">A validated package becomes an immutable submitted_payload_snapshot before any receipt evidence exists.</p>
+<section class="grid two">
+  <div class="panel"><div class="artifact-frame square-art"><img src="assets/snapshot-lock.png" alt="Generated bitmap of immutable snapshot lock"></div></div>
+  <div class="panel"><div class="panel-label">Immutable manifest</div><h2>submitted_payload_snapshot <span data-snapshot-status class="pill warn">pending</span></h2><p>Snapshot seals Shared Input, AffectedProductVersion rows, evidence references, redaction manifest, and hash chain.</p><div class="route-grid snapshot-route"><span class="pill info">FR portal rehearsal</span><span class="pill warn">DE testing-only</span><span class="pill warn">ES email fallback</span></div><div class="hash-strip">SHA256 · 3f2a...9b7c · submitted_payload_snapshot · immutable</div><button class="btn primary" data-generate-snapshot type="button">Generate immutable snapshot</button></div>
+</section>
+
+      </main>
+      <footer class="journey-footer">
+        <a class="btn ghost" href="case-sharetable.html">← Previous</a>
+        <p data-footer-message><span class="en">Guard chain: P00 endorsement → P02 package → P03 snapshot → P04 receipt → P05/P06.</span><span class="cn">守卫链：P00 背书 → P02 报送包 → P03 快照 → P04 回执 → P05/P06。</span></p>
+        <a class="btn primary" href="evidence-receipt.html" data-requires="snapshot">Continue →</a>
+      </footer>
+      <div class="toast" data-toast role="status" aria-live="polite"></div>
+      <script src="js/app-state.js"></script>
+      <script src="js/interactions.js"></script>
+    </body>
+    </html>
